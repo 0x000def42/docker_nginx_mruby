@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER matsumotory
+MAINTAINER 0x000def42
 
 RUN apt-get -y update
 RUN apt-get -y install sudo openssh-server
