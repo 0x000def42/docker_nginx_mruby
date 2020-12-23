@@ -33,6 +33,5 @@ ADD docker/hook /usr/local/nginx/hook
 ADD docker/conf /usr/local/nginx/conf
 ADD docker/conf/nginx.conf /usr/local/nginx/conf/nginx.conf
 
-RUN echo "\ndaemon off;" >> /usr/local/nginx/conf/nginx.conf
 WORKDIR /usr/local/nginx/sbin
-CMD ["./nginx"]
+CMD ["./nginx", "-g", "daemon off;"]
